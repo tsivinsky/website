@@ -48,6 +48,7 @@
       .pfp {
         width: 100%;
         max-width: 300px;
+        height: 100%;
         border-radius: 0.8rem;
         object-fit: cover;
       }
@@ -55,7 +56,6 @@
       .header {
         display: flex;
         gap: 1rem;
-        flex-wrap: wrap;
       }
 
       .name {
@@ -87,7 +87,25 @@
         gap: 0.5rem;
       }
 
+      @media screen and (min-width: 2000px) {
+        :root {
+          font-size: 24px;
+        }
+
+        .container {
+          max-width: 1440px;
+        }
+
+        .pfp {
+          max-width: 400px;
+        }
+      }
+
       @media screen and (max-width: 720px) {
+        .header {
+          flex-direction: column;
+        }
+
         .bio p {
           margin: 0.5rem 0;
         }
@@ -108,7 +126,7 @@
 
     <div class="container">
       <div class="header">
-        <img src="./me.jpg" alt="Me" width="300" height="300" class="pfp" />
+        <img src="./me.jpg" alt="Me" class="pfp" />
         <div class="info">
           <h1 class="name">Dan Tsivinsky</h1>
           <div class="bio">
