@@ -3,22 +3,151 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <title>tsivinsky</title>
-
     <style>
-      html {
-        color-scheme: dark;
+      :root {
+        font-size: 16px;
+
+        --color-background: #151414;
+        --color-foreground: #e9e6e1;
+        --color-accent: #4357ad;
+      }
+
+      *,
+      *::before,
+      *::after {
+        font-family: "Open Sans";
+        color: var(--color-foreground);
+      }
+
+      a:hover {
+        text-decoration: none;
+        background-color: var(--color-accent);
       }
 
       a:visited {
         color: currentColor;
       }
+
+      body {
+        background-color: var(--color-background);
+      }
+
+      .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+      }
+
+      .pfp {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 0.8rem;
+        object-fit: cover;
+      }
+
+      .header {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .name {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      .info {
+        margin: 0.5rem 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .bio {
+        font-size: 1rem;
+        margin-top: 0.8rem;
+      }
+
+      .bio p {
+        margin: 0.4rem 0;
+      }
+
+      .socials {
+        margin: 0;
+        margin-top: auto;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        gap: 0.5rem;
+      }
+
+      @media screen and (max-width: 720px) {
+        .bio p {
+          margin: 0.5rem 0;
+        }
+      }
     </style>
   </head>
   <body>
-    <h1>
-      there is no website here. Just go to my
-      <a href="https://github.com/tsivinsky">github</a>.
-    </h1>
+    <script>
+      const params = new URLSearchParams(location.search);
+      const accentColor = params.get("accent");
+      if (accentColor) {
+        document.documentElement.style.setProperty(
+          "--color-accent",
+          `#${accentColor}`,
+        );
+      }
+    </script>
+
+    <div class="container">
+      <div class="header">
+        <img src="./me.jpg" alt="Me" width="300" height="300" class="pfp" />
+        <div class="info">
+          <h1 class="name">Dan Tsivinsky</h1>
+          <div class="bio">
+            <p>
+              I write code, work as frontend developer at
+              <a href="https://dfa.media" target="_blank">dfa.media</a>.
+            </p>
+            <p>
+              In free time I write Go, either creating
+              <a href="https://github.com/tsivinsky/goenv" target="_blank"
+                >small libraries</a
+              >
+              or
+              <a
+                href="https://github.com/tsivinsky/space-shooter"
+                target="_blank"
+                >games</a
+              >
+              using ebitengine.
+            </p>
+            <p>I use archlinux and neovim daily.</p>
+          </div>
+          <ul class="socials">
+            <li>
+              <a href="https://github.com/tsivinsky" rel="me" target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://reddit.com/u/daniil-tsivinsky"
+                rel="me"
+                target="_blank"
+                >Reddit</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
