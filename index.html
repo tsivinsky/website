@@ -87,6 +87,15 @@
         gap: 0.5rem;
       }
 
+      hr {
+        margin: 24px 0;
+        color: var(--color-foreground);
+      }
+
+      .projects-list {
+        line-height: 1.45rem;
+      }
+
       @media screen and (min-width: 1440px) {
         :root {
           font-size: 24px;
@@ -169,6 +178,39 @@
             </li>
           </ul>
         </div>
+      </div>
+      <hr />
+      <div>
+        <h3>Some of my projects</h3>
+        <ul class="projects-list">
+          <li>
+            <a href="https://github.com/tsivinsky/use-confirm" target="_blank"
+              >use-confirm</a
+            >
+            - react hook to replace browser `confirm` function to use with
+            custom modal
+          </li>
+          <li>
+            <a href="https://github.com/tsivinsky/plain" target="_blank"
+              >plain</a
+            >
+            - file-based router written in Go
+          </li>
+          <li>
+            <a href="https://github.com/tsivinsky/goenv" target="_blank"
+              >goenv</a
+            >
+            - wrapper around
+            <a href="https://github.com/joho/godotenv" target="_blank"
+              >godotenv</a
+            >
+            to load environment variables into Go struct
+          </li>
+          <li>
+            <a href="https://github.com/tsivinsky/sshx" target="_blank">sshx</a>
+            - cli program to manage servers for easier ssh connection
+          </li>
+        </ul>
       </div>
     </div>
   </body>
