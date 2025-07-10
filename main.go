@@ -11,6 +11,9 @@ func main() {
 
 	mux := http.NewServeMux()
 
+	assetServer := http.FileServer(http.Dir("./assets"))
+	mux.Handle("GET /assets/", http.StripPrefix("/assets", assetServer))
+
 	mux.HandleFunc("GET /", func(w http.ResponseWriter, r *http.Request) {
 		tmpl.ExecuteTemplate(w, "index.html", nil)
 	})
