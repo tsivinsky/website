@@ -1,18 +1,24 @@
-body {
+header {
+  padding: 6px 0;
+  height: 30dvh;
+  background-color: var(--color-accent);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
+  .container {
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  a {
+    margin-top: 12px;
+  }
 }
 
-.title {
-  font-size: 46px;
-  text-align: center;
-}
-
-nav {
-  margin-top: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
+main.container {
+  margin-top: 12px;
 }
