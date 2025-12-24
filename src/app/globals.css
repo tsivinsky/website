@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  @apply text-[16px] xl:text-[20px] text-black;
+}
+
+@theme {
+  --text-*: initial;
+  --text-title: 2.25rem;
+  --text-title--line-height: 2.75rem;
+  --text-subtitle: 1.5rem;
+  --text-subtitle--line-height: 1.75rem;
+  --text-medium: 1rem;
+  --text-medium--line-height: 1.5rem;
+
+  --color-accent: #f3407c;
+}
+
+h1 {
+  @apply text-title font-semibold -mx-0.5;
+}
+
+h2 {
+  @apply text-subtitle font-semibold -mx-0.5;
+}
+
+p {
+  @apply text-medium my-1;
+}
+
+a {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 1px;
+    background-color: var(--color-accent);
+    transition: all 0.25s ease;
+    transition-property: height, color;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &::after {
+      height: 100%;
+    }
+  }
+}
