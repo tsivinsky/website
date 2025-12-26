@@ -30,6 +30,7 @@ p {
 
 a {
   position: relative;
+  display: inline-block;
 
   &::after {
     content: "";
@@ -38,7 +39,7 @@ a {
     left: 0;
     right: 0;
     z-index: -1;
-    height: 1px;
+    height: 2px;
     background-color: var(--color-accent);
     transition: all 0.25s ease;
     transition-property: height, color;

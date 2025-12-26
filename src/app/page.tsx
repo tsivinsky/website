@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="mt-10">
+    <div>
       <div className="flex gap-2 md:gap-4 flex-col md:flex-row">
         <div className="shrink-0 w-[128px] h-[128px] md:w-[192px] md:h-[192px] relative overflow-hidden">
           <Image
@@ -38,6 +39,10 @@ export default function Home() {
         <p>
           Also, I like writing Go projects in my spare time. Something like
           CLIs, REST apis or even simple video games.
+        </p>
+        <p>
+          When not coding, I love playing <Link href="/games">video games</Link>
+          .
         </p>
         <br />
         <h2>My projects</h2>
