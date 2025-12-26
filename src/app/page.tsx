@@ -19,7 +19,7 @@ export default function Home() {
             Hi, this is my personal website. Here you can find info about me and
             my projects.
           </p>
-          <div className="mt-auto">
+          <div className="mt-auto flex gap-2">
             <a
               href="https://github.com/tsivinsky"
               target="_blank"
@@ -27,6 +27,7 @@ export default function Home() {
             >
               Github
             </a>
+            <a href="mailto:daniil@tsivinsky.com">Email</a>
           </div>
         </div>
       </div>
