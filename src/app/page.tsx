@@ -72,6 +72,76 @@ export default function Home() {
           </ul>
         </details>
       </div>
+
+      <br />
+      <h2>What I use for work</h2>
+      <ul className="list-disc list-inside mt-2">
+        <li>
+          <a href="https://neovim.io" target="_blank" rel="noopener noreferrer">
+            neovim
+          </a>{" "}
+          - my favourite text editor. After switching to it from vscode, I
+          wasn&apos;t able to go back or to any other editor.
+        </li>
+        <li>
+          <a
+            href="https://archlinux.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            archlinux
+          </a>{" "}
+          - first I tried linux mint but didn&apos;t use it much. then, I
+          installed ubuntu, it was great. after switching to arch, I didn&apos;t
+          want anything else.
+        </li>
+        <li>
+          <a
+            href="https://kde.org/plasma-desktop/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            kde plasma
+          </a>{" "}
+          - at first I used i3/sway but then switched to kde plasma for ootb
+          experience. I kinda miss tiling window managers, but I&apos;m quite
+          happy with kde.
+        </li>
+        <li>
+          <a
+            href="https://ghostty.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ghostty
+          </a>{" "}
+          - terminal emulator written in zig. before I was using kitty, but
+          after ghostty came out, I didn&apos;t look back.
+        </li>
+        <li>
+          <a
+            href="https://github.com/tmux/tmux"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            tmux
+          </a>{" "}
+          - terminal multiplexer allowing me to open several sessions in one
+          terminal window. kinda redundant because ghostty supports tabs but
+          I&apos;m just used to this workflow.
+        </li>
+        <li>
+          <a
+            href="https://www.keychron.com/products/keychron-k15-max-alice-layout-qmk-wireless-custom-mechanical-keyboard"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            keychron k15 max
+          </a>{" "}
+          - love mechanical keyboards. After using several 65% keyboards, I
+          wanted my F-row back. Also wanted to try low-profile setup.
+        </li>
+      </ul>
     </div>
   );
 }
