@@ -31,9 +31,9 @@ export default function Home() {
       </div>
       <div>
         <p>
-          I am a programmer and currently work as frontend developer. Im not
-          good at design (as you can see from this page), I enjoy doing more
-          architectural stuff going into making websites and webapps.
+          I am a programmer and currently work as frontend developer. I
+          don&apos;t really like doing design, I enjoy more architectural stuff
+          going into making websites and webapps.
         </p>
         <p>
           Also, I like writing Go projects in my spare time. Something like
