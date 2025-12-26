@@ -41,71 +41,12 @@ export default function Home() {
           CLIs, REST apis or even simple video games.
         </p>
         <p>
+          If you want to see some of my projects, you can do so{" "}
+          <Link href="/projects">here</Link>.
+        </p>
+        <p>
           When not coding, I love playing <Link href="/games">video games</Link>
           .
-        </p>
-        <br />
-        <h2>My projects</h2>
-        <ul className="list-disc list-inside mt-2">
-          <li>
-            <a
-              href="https://github.com/tsivinsky/use-confirm"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              use-confirm
-            </a>{" "}
-            - React hook alternative to built-in `confirm()` function to use
-            with your own modal component
-          </li>
-          <li>
-            <a
-              href="https://github.com/tsivinsky/sshx"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              sshx
-            </a>{" "}
-            - cli written in Go to manage servers and quickly connect to them
-            via ssh
-          </li>
-          <li>
-            <a
-              href="https://github.com/tsivinsky/goenv"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              goenv
-            </a>{" "}
-            - Go library for parsing env variables to struct
-          </li>
-        </ul>
-        <p>
-          Sometimes I even have fun. For example, when I made{" "}
-          <a
-            href="https://github.com/tsivinsky/hi-mom"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            a js library
-          </a>{" "}
-          with just one function saying &quot;Hi, mom!&quot;, inspired by{" "}
-          <a
-            href="https://www.youtube.com/@Fireship"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Fireship
-          </a>
-          . It was even featured in his{" "}
-          <a
-            href="https://youtu.be/qXUl3VsbA6o?si=wCBo2oAOHYrvwQ_C&t=108"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            youtube video
-          </a>{" "}
-          and got more than 300 github stars.
         </p>
 
         <br />

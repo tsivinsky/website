@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body className="h-full">
-        <main className="max-w-[1200px] w-full mt-10 mx-auto px-2 h-full flex flex-col">
+        <main className="max-w-[1200px] w-full pt-10 mx-auto px-2 h-full flex flex-col">
           {children}
         </main>
       </body>
