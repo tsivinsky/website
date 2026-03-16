@@ -14,6 +14,8 @@
   --text-h3--line-height: 1.5rem;
   --text-medium: 1rem;
   --text-medium--line-height: 1.5rem;
+  --text-small: 0.8rem;
+  --text-small--line-height: 1.2rem;
 
   --color-accent: #f3407c;
 }

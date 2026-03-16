@@ -13,7 +13,9 @@ export const Project = ({ name, repo, children }: ProjectProps) => {
       <p className="italic">{name}</p>
       <div className="mt-1">{children}</div>
       <div className="mt-2 flex items-center gap-2">
-        <Link href={repo}>Repository</Link>
+        <Link href={repo} className="text-small">
+          repository
+        </Link>
       </div>
     </div>
   );
