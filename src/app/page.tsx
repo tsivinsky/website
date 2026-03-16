@@ -11,24 +11,33 @@ export default function Home() {
           </div>
           <div className="flex flex-col">
             <h1>Dan Tsivinsky</h1>
-            <p>programmer</p>
-            <div className="mt-auto flex items-end gap-2">
-              <a
-                href="https://github.com/tsivinsky"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
-              </a>
-              <a
-                href="https://bsky.app/profile/tsivinsky.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Bluesky
-              </a>
-              <a href="mailto:daniil@tsivinsky.com">Email</a>
-            </div>
+            <ul className="list-disc list-inside mt-2">
+              <li>
+                writing code on{" "}
+                <a
+                  href="https://github.com/tsivinsky"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  github
+                </a>
+              </li>
+              <li>
+                posting on{" "}
+                <a
+                  href="https://bsky.app/profile/tsivinsky.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  bluesky
+                </a>
+              </li>
+              <li>
+                sometimes reading my{" "}
+                <a href="mailto:daniil@tsivinsky.com">email</a>
+              </li>
+              <li>fiddling with my homelab</li>
+            </ul>
           </div>
         </div>
 

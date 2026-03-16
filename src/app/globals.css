@@ -34,6 +34,10 @@ p {
   @apply text-medium my-1;
 }
 
+ul li {
+  @apply text-medium;
+}
+
 a:not(:has(img)) {
   position: relative;
   display: inline-block;
