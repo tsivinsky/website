@@ -20,6 +20,14 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   github
+                </a>{" "}
+                or{" "}
+                <a
+                  href="https://git.tsivinsky.com/tsivinsky"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  gitea
                 </a>
               </li>
               <li>
